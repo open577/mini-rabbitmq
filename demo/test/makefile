@@ -1,6 +1,6 @@
-main:main.cc protoc.pb.cc
+main.exe:main.cc protoc.pb.cc
 	g++ -o $@ $^ -std=c++11 -lprotobuf
 
 .PHONY:clean
 clean:
-	rm main
+	rm main.exe
